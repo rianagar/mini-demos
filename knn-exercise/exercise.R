@@ -9,8 +9,8 @@ set.seed(4948493)
 
 #Sample the Iris data set (70% train, 30% test)
 ir_sample <- sample(1:nrow(iris),size=nrow(iris)*.7)
-ir_train <- iris[ir_sample,] #Select the 70% of rows
-ir_test <- iris[-ir_sample,] #Select the 30% of rows
+ir_train <- iris[ir_sample, 0.70] #Select the 70% of rows
+ir_test <- iris[-ir_sample, 0.30] #Select the 30% of rows
 
 
 #Find Accuracy of Prediction
